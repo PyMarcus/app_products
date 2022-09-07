@@ -33,8 +33,6 @@ def signInApi() -> T:
             print(values)
             if api.signIn(values):
                 return redirect("/login", code=302)
-            else:
-                return render_template("register.html")
     return render_template("register.html")
 
 
